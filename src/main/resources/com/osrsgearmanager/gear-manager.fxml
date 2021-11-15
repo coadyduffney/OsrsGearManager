@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -13,7 +15,10 @@
     <center>
         <VBox alignment="CENTER" styleClass="equipmentPane" stylesheets="@styles.css">
             <children>
-                <AnchorPane fx:id="equipmentPane" />
+                <AnchorPane fx:id="equipmentPane" prefHeight="415.0" prefWidth="374.0">
+               <children>
+                  <ImageView fx:id="capeSlotIcon" fitHeight="55.0" fitWidth="60.0" layoutX="68.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #333333;" />
+               </children></AnchorPane>
             </children>
         </VBox>
     </center>
@@ -58,7 +63,7 @@
                 </HBox>
                 <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="356.0" spacing="10.0">
                     <children>
-                        <PrefixSelectionComboBox prefWidth="150.0" />
+                  <ComboBox fx:id="capeSlotSelection" prefWidth="150.0" />
                         <Label text="Cape Slot">
                             <font>
                                 <Font name="Candara Bold" size="14.0" />
@@ -203,7 +208,7 @@
                                                 <Font name="Candara" size="14.0" />
                                             </font>
                                         </Label>
-                                        <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                        <Label fx:id="attackStab" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                             <font>
                                                 <Font name="Candara" size="14.0" />
                                             </font>
@@ -217,7 +222,7 @@
                                                 <Font name="Candara" size="14.0" />
                                             </font>
                                         </Label>
-                                        <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                        <Label fx:id="attackSlash" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                             <font>
                                                 <Font name="Candara" size="14.0" />
                                             </font>
@@ -231,7 +236,7 @@
                                                 <Font name="Candara" size="14.0" />
                                             </font>
                                         </Label>
-                                        <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                        <Label fx:id="attackCrush" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                             <font>
                                                 <Font name="Candara" size="14.0" />
                                             </font>
@@ -245,7 +250,7 @@
                                                 <Font name="Candara" size="14.0" />
                                             </font>
                                         </Label>
-                                        <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                        <Label fx:id="attackMagic" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                             <font>
                                                 <Font name="Candara" size="14.0" />
                                             </font>
@@ -259,7 +264,7 @@
                                                 <Font name="Candara" size="14.0" />
                                             </font>
                                         </Label>
-                                        <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                        <Label fx:id="attackRange" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                             <font>
                                                 <Font name="Candara" size="14.0" />
                                             </font>
@@ -288,7 +293,7 @@
                                         <Font name="Candara" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                <Label fx:id="defenceStab" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                     <font>
                                         <Font name="Candara" size="14.0" />
                                     </font>
@@ -302,7 +307,7 @@
                                         <Font name="Candara" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                <Label fx:id="defenseSlash" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                     <font>
                                         <Font name="Candara" size="14.0" />
                                     </font>
@@ -316,7 +321,7 @@
                                         <Font name="Candara" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                <Label fx:id="defenceCrush" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                     <font>
                                         <Font name="Candara" size="14.0" />
                                     </font>
@@ -330,7 +335,7 @@
                                         <Font name="Candara" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                <Label fx:id="defenceMagic" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                     <font>
                                         <Font name="Candara" size="14.0" />
                                     </font>
@@ -344,7 +349,7 @@
                                         <Font name="Candara" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                <Label fx:id="defenceRange" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                     <font>
                                         <Font name="Candara" size="14.0" />
                                     </font>
@@ -372,7 +377,7 @@
                                         <Font name="Candara" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                <Label fx:id="meleeStrength" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                     <font>
                                         <Font name="Candara" size="14.0" />
                                     </font>
@@ -386,7 +391,7 @@
                                         <Font name="Candara" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                <Label fx:id="rangedStrength" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                     <font>
                                         <Font name="Candara" size="14.0" />
                                     </font>
@@ -400,7 +405,7 @@
                                         <Font name="Candara" size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
+                                <Label fx:id="magicDamage" layoutX="10.0" layoutY="10.0" text="0" wrapText="true">
                                     <font>
                                         <Font name="Candara" size="14.0" />
                                     </font>
